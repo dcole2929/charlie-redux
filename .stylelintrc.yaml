@@ -1,0 +1,13 @@
+extends: stylelint-config-standard
+syntax: less
+rules:
+  color-hex-case: lower
+  string-quotes: single
+  font-family-name-quotes: always-where-recommended
+  indentation: tab
+  no-eol-whitespace: null
+  media-feature-name-no-unknown: [true, {
+    ignoreMediaFeatureNames: [/^@/] # allow variables as media queries
+  }]
+  declaration-property-value-blacklist:
+    /^border/: ["none"]

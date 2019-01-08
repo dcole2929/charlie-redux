@@ -1,0 +1,15 @@
+{
+  "temp-directory": "coverage/temp",
+  "require" : ["babel-register"],
+  "instrument" : false,
+  "sourceMap" : false,
+  "include": ["frontend/**/*.+(js|jsx)"],
+  "exclude": [
+    "build/**",
+    "coverage/**",
+    "**/node_modules/**",
+    "**/*.test.+(js|jsx)",
+    "frontend/test/**",
+    "frontend/components/common/Collapsible/*"
+  ]
+}
